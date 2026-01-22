@@ -9,20 +9,84 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="inter-font">
-    <header class="max-w-[1240px] h-[92px] bg-[#412567] mx-auto my-0 py-4 px-[200px]">
+    <header class="lg:max-w-[90%] h-[92px] bg-[#412567] mx-auto my-0 py-4 px-[200px]">
         <nav class="h-full flex justify-between items-center text-white">
             <div>
                 <h2 class="leading-none text-3xl font-bold">Tech<span>Wave</span></h2>
             </div>
             <div>
-                <ul class="flex gap-8">
+                <ul class="hidden md:flex gap-8">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Episodes</a></li>
                     <li><a href="#">Host</a></li>
                 </ul>
+                <img class="block md:hidden" src="./assets/hamburger-menu.png" alt="">
             </div>
-            <button class="p-2 bg-gradient-to-b from-[#F7E93F] via-[#9100F8] to-[#FB09B4] rounded-lg">Subscribe<i class="fa-solid fa-arrow-right ml-1"></i></button>
+            <button class="hidden md:inline-block p-2 bg-gradient-to-r from-[#F7E93F] via-[#9100F8] to-[#FB09B4] rounded-lg">Subscribe<i class="fa-solid fa-arrow-right ml-1 sm:hidden"></i></button>
         </nav>
     </header>
+    <!-- hero section start here -->
+     <section>
+        <div class="lg:py-[101px] mx-auto my-0 max-w-[90%] bg-[url(/assets/hero-bg.png)] bg-center bg-no-repeat bg-cover flex justify-center items-center">
+            <div class="flex flex-col justify-center items-center text-center">
+                <div class="flex flex-col justify-center items-center h-85 w-85 border bg-[url(/assets/hero-circle.png)] bg-cover bg-no-repeat bg-center rounded-full text-center relative">
+                    <img class="" src="./assets/microphone.png" alt="microphone-image">
+                    <p class="h-8 w-[75px] bg-[#00FF88] text-center rounded-2xl absolute left-55 -top-2">New</p>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="text-6xl text-white mt-10 mb-2 font-extrabold">TechWave</h2>
+                        <p class="text-white font-extralight mb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    </div>
+                    <div class="flex gap-2 justify-center items-center">
+                        <button class="flex gap-2 w-50 h-11  bg-gradient-to-r from-[#F7E93F] via-[#9100F8] to-[#FB09B4] justify-center items-center rounded-3xl px-5 py-3">
+                            <img src="./assets/spotify.png" alt="spotify-logo">
+                            <h3 class="text-white font-semibold">Listen on Spotify</h3>
+                        </button>
+                        <button class="flex gap-2 w-[147px] h-11 border border-[#00FF88] justify-center items-center rounded-3xl px-5 py-3">
+                            <img src="./assets/message.png" alt="message-icon">
+                            <h3 class="text-[#00FF88]">Subscribe</h3>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+     </section>
+    <!-- hero section end here -->
+     <!-- about section start -->
+      <section>
+        <div class="max-w-[90%] mx-auto bg-[#1A0B2E] pt-12 px-50">
+            <div class="h-[210px] max-w-[1200px] text-center">
+                <h2 class="text-white font-bold text-[40px] mb-4">About the Podcast</h2>
+                <p class="text-white text-[16px] mb-5 font-extralight">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+                    We break down complex topics into digestible insights, explore productivity strategies that actually work,
+                    and share stories of personal growth from industry leaders.
+                </p>
+                <p class="text-white text-[16px] font-extralight">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            </div>
+            <hr class="text-white mb-20 mt-20 font-extralight">
+            <div class="flex justify-around items-center h-[94px] max-w-[1200px] pb-[120px]">
+                <div>
+                    <h1 class="text-[#00FF88] text-[48px] font-extrabold">250K+</h1>
+                    <p class="text-white text-[16px] font-extralight">Monthly Listeners</p>
+                </div>
+                <div>
+                    <h1 class="text-[#00FF88] text-[48px] font-extrabold">200+</h1>
+                    <p class="text-white text-[16px] font-extralight">Episodes Published</p>
+                </div>
+                <div>
+                    <h1 class="text-[#00FF88] text-[48px] font-extrabold">4.9★</h1>
+                    <p class="text-white text-[16px] font-extralight">Average Rating</p>
+                </div>
+                <div>
+                    <h1 class="text-[#00FF88] text-[48px] font-extrabold">50+</h1>
+                    <p class="text-white text-[16px] font-extralight">Industry Experts</p>
+                </div>
+            </div>
+        </div>
+      </section>
+     <!-- about section end -->
+     </div>
 </body>
 </html>
